@@ -56,12 +56,20 @@
 			children = (
 				0966F9E51BFA66BE003639DE /* AppDelegate.swift */,
 				0966F9E71BFA66BE003639DE /* ViewController.swift */,
-				0966F9E91BFA66BE003639DE /* Main.storyboard */,
+				0966F9F71BFA68F3003639DE /* Design */,
 				0966F9EC1BFA66BE003639DE /* Assets.xcassets */,
-				0966F9EE1BFA66BE003639DE /* LaunchScreen.storyboard */,
 				0966F9F11BFA66BE003639DE /* Info.plist */,
 			);
 			path = App1_HolaMundo;
+			sourceTree = "<group>";
+		};
+		0966F9F71BFA68F3003639DE /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				0966F9EE1BFA66BE003639DE /* LaunchScreen.storyboard */,
+				0966F9E91BFA66BE003639DE /* Main.storyboard */,
+			);
+			name = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +256,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App1_HolaMundo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cice.App1-HolaMundo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -259,9 +269,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App1_HolaMundo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cice.App1-HolaMundo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +296,7 @@
 				0966F9F61BFA66BE003639DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
