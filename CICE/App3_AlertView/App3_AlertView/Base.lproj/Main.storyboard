@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App3_AlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHO-TG-uKn">
+                                <rect key="frame" x="25" y="285" width="550" height="30"/>
+                                <color key="backgroundColor" red="0.97257577014820673" green="0.98525474430894988" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title=" ALERTA!! ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMp-SB-qso"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hr4-Xo-Odh">
+                                <rect key="frame" x="20" y="556" width="560" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="jg4-t0-ec1">
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" id="AMz-CR-VfS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gso-eP-JaU"/>
+                                    <barButtonItem tag="1" systemItem="pause" id="qDw-IO-Gqz">
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" id="PDn-cz-4YO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ug2-Hc-vMB"/>
+                                    <barButtonItem tag="2" systemItem="fastForward" id="xfe-kW-e1F">
+                                        <connections>
+                                            <action selector="fastButton:" destination="BYZ-38-t0r" id="LQz-OM-Do6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hsd-wR-8k4"/>
+                                    <barButtonItem tag="3" systemItem="rewind" id="Ovc-QM-Gg3">
+                                        <connections>
+                                            <action selector="rewindButton:" destination="BYZ-38-t0r" id="wdZ-N9-NOk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-Ae-7gS">
+                                <rect key="frame" x="25" y="335" width="550" height="30"/>
+                                <color key="backgroundColor" red="0.97257577009999996" green="0.98525474430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="UIAlertView with TextField">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertWithTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mjz-qA-ofo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84769017951414116" green="0.8684753412924241" blue="0.93083082662727268" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="HHO-TG-uKn" secondAttribute="trailing" constant="5" id="1eC-hX-7nM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hr4-Xo-Odh" secondAttribute="bottom" id="32h-mw-2c5"/>
+                            <constraint firstItem="QbF-Ae-7gS" firstAttribute="top" secondItem="HHO-TG-uKn" secondAttribute="bottom" constant="20" id="3IA-18-9Pt"/>
+                            <constraint firstItem="QbF-Ae-7gS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="EbE-mO-VGP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hr4-Xo-Odh" secondAttribute="trailing" id="UBB-P2-abc"/>
+                            <constraint firstItem="Hr4-Xo-Odh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UOs-9P-3Dc"/>
+                            <constraint firstItem="HHO-TG-uKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aeP-3u-SsY"/>
+                            <constraint firstItem="HHO-TG-uKn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eMi-Iu-AYt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QbF-Ae-7gS" secondAttribute="trailing" constant="5" id="ldV-5s-15f"/>
+                            <constraint firstItem="HHO-TG-uKn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="oEP-Xc-fCG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
