@@ -46,24 +46,35 @@ class ViewController: UIViewController {
         showMessageInAlert("Rewind", _message: "Estamos pulsando el boton rewind")
     }
     @IBAction func showAlertWithTextField(sender: AnyObject) {
+        // creamso nuestro objeto TextField con OPTIONAL -> quiere decir que dicho objeto puede ser nulo o no.
         var loginTextField:UITextField?
+        
+        // Creamos nuestro componente alertcontroller.
         let alertController = UIAlertController(title: "UIAlertController",
             message: "Con campo de texto",
             preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // Crearmos una accion con un constructor designado.
         let ok = UIAlertAction(title: "Ok",
             style: .Default) { (UIAlertAction) -> Void in
                 print("OK: "+(loginTextField?.text)!)
         }
+        
+        // Crearmos una accion con un constructor designado.
         let cancel = UIAlertAction(title: "Cancel",
             style: .Default) { (UIAlertAction) -> Void in
                 print("Cancel: "+(loginTextField?.text)!)
         }
         alertController.addAction(ok)
         alertController.addAction(cancel)
+        
+        // Añadimos el campo de texto con una configurarion de manejador o metodo de clausura (BLOQUES OBJ C)
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             loginTextField = textField
             loginTextField?.placeholder = "Enter your ID"
         }
+        
+        // Presentamos la vista.
         presentViewController(alertController, animated: true, completion: nil)
     }
     
