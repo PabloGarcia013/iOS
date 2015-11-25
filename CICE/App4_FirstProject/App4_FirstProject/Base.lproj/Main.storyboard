@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App4_FirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNe-2b-znG">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Utg-RM-LqZ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="QeK-kj-Wpx">
+                                        <connections>
+                                            <action selector="onClickSocial:" destination="BYZ-38-t0r" id="tkJ-zM-r2q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZIJ-nU-cnD"/>
+                                    <barButtonItem systemItem="organize" id="uaw-BP-57y">
+                                        <connections>
+                                            <action selector="onClickMessage:" destination="BYZ-38-t0r" id="IUK-Js-oxa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Svi-BO-YXQ"/>
+                                    <barButtonItem systemItem="camera" id="RRV-hk-yRR">
+                                        <connections>
+                                            <action selector="onClickCamera:" destination="BYZ-38-t0r" id="g0G-Gc-94C"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9cf-d6-AC4"/>
+                                    <barButtonItem systemItem="trash" id="OA6-4y-myd">
+                                        <connections>
+                                            <action selector="onClickChat:" destination="BYZ-38-t0r" id="Q8c-Sc-69l"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FE2-3A-Kag">
+                                <rect key="frame" x="25" y="518" width="550" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Enviar Fomulario de Registro"/>
+                                <connections>
+                                    <action selector="formAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrL-LE-53g"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wv3-5P-6jG">
+                                <rect key="frame" x="150" y="96" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KGA-Hg-T6P"/>
+                                    <constraint firstAttribute="height" constant="300" id="sEv-Y7-DCM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquí ira el envío..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgc-YF-m0L">
+                                <rect key="frame" x="233" y="25" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FE2-3A-Kag" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="3nP-QT-tW7"/>
+                            <constraint firstItem="Wv3-5P-6jG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5W7-Nx-h3n"/>
+                            <constraint firstItem="DNe-2b-znG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VEU-8u-Kkh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FE2-3A-Kag" secondAttribute="trailing" constant="5" id="XAW-bg-lEJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DNe-2b-znG" secondAttribute="trailing" constant="-20" id="aqE-YH-bpR"/>
+                            <constraint firstItem="DNe-2b-znG" firstAttribute="top" secondItem="FE2-3A-Kag" secondAttribute="bottom" constant="5" id="cXy-KA-lpF"/>
+                            <constraint firstItem="kgc-YF-m0L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="cxK-9y-R7w"/>
+                            <constraint firstItem="kgc-YF-m0L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hYc-0h-E5o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DNe-2b-znG" secondAttribute="bottom" id="haR-jB-r6y"/>
+                            <constraint firstItem="Wv3-5P-6jG" firstAttribute="top" secondItem="kgc-YF-m0L" secondAttribute="bottom" constant="50" id="kF7-vI-2vZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pulsameButton" destination="FE2-3A-Kag" id="HT6-Uc-F5z"/>
+                        <outlet property="resultImage" destination="Wv3-5P-6jG" id="xKv-hV-X1e"/>
+                        <outlet property="resultLabel" destination="kgc-YF-m0L" id="5Ji-S6-yV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="142"/>
+        </scene>
+    </scenes>
+</document>
