@@ -184,6 +184,14 @@ nombreFuncion3("Me llamo Pablo")
 nombreFuncion4("Pablo", edad: 25)
 
 
+/******* Practicamos *********/
+
+
+func estamosProbando(nombre: String, apellido: String, edad: Int)->String{
+    return "Mi nombre es \(nombre) \(apellido) y mi edad es \(edad)"
+}
+
+estamosProbando("Pablo", apellido: "Garcia", edad: 25)
 
 
 
