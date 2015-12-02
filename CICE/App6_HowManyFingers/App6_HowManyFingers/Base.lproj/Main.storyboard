@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App6_HowManyFingers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiC-D7-V4F">
+                                <rect key="frame" x="261" y="562" width="79" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.75686274509999996" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title=" ADIVINA ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessTheNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjt-xV-OI9"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3r-vD-vFt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="¿Cuantos dedos tengo?" id="wk9-ao-3dE"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1..10" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-aB-90a">
+                                <rect key="frame" x="471" y="277" width="79" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="¿?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10c-0W-rfm">
+                                <rect key="frame" x="50" y="276" width="44" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="¿Que dedos he sacado?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-Sl-pjw">
+                                <rect key="frame" x="212" y="482" width="176" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfH-9z-cZC">
+                                <rect key="frame" x="200" y="89" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ht-wL-RDn">
+                                <rect key="frame" x="35" y="89" width="160" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B3r-vD-vFt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0N4-Y3-yp5"/>
+                            <constraint firstItem="10c-0W-rfm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="1MS-B0-734"/>
+                            <constraint firstItem="0Ht-wL-RDn" firstAttribute="top" secondItem="B3r-vD-vFt" secondAttribute="bottom" constant="45" id="3gr-Ej-N5e"/>
+                            <constraint firstItem="VfH-9z-cZC" firstAttribute="top" secondItem="B3r-vD-vFt" secondAttribute="bottom" constant="45" id="Bc7-Jd-oZI"/>
+                            <constraint firstItem="VfH-9z-cZC" firstAttribute="leading" secondItem="0Ht-wL-RDn" secondAttribute="trailing" constant="5" id="D8H-at-niy"/>
+                            <constraint firstItem="0Ht-wL-RDn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="WNU-Tp-Xdm"/>
+                            <constraint firstItem="hiC-D7-V4F" firstAttribute="top" secondItem="EFH-Sl-pjw" secondAttribute="bottom" constant="50" id="cFl-DN-2Ls"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hiC-D7-V4F" secondAttribute="bottom" constant="5" id="cHi-5x-sZp"/>
+                            <constraint firstItem="10c-0W-rfm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gnu-MJ-wul"/>
+                            <constraint firstItem="B3r-vD-vFt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="pZN-jw-f7Y"/>
+                            <constraint firstItem="yNX-aB-90a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pnL-JX-Ogk"/>
+                            <constraint firstItem="hiC-D7-V4F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ujk-kH-Z81"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B3r-vD-vFt" secondAttribute="trailing" constant="-20" id="v2H-XG-BwJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yNX-aB-90a" secondAttribute="trailing" constant="30" id="xeO-ST-Luh"/>
+                            <constraint firstItem="EFH-Sl-pjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zqK-wP-a7B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelAutoNumber" destination="10c-0W-rfm" id="ARd-1K-jVE"/>
+                        <outlet property="labelMyNumber" destination="yNX-aB-90a" id="iHg-nb-HUv"/>
+                        <outlet property="labelPoints" destination="VfH-9z-cZC" id="nQc-C4-CSs"/>
+                        <outlet property="labelResult" destination="EFH-Sl-pjw" id="Qzr-8V-HCM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
