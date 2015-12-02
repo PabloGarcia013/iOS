@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App5_My_Dog_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIN-vw-WWt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.56620684988355541" green="0.71846451648841358" blue="0.71581037660432634" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                                    <color key="textColor" red="0.96106141219999996" green="1" blue="0.98425034300000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Edad de mi Perro" id="jWz-pi-f1x"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce la edad de tu perro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-kA-Hzi">
+                                <rect key="frame" x="189" y="59" width="223" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad de tu perro" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-tw-uvY">
+                                <rect key="frame" x="40" y="95" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkV-Z2-DXn">
+                                <rect key="frame" x="241" y="175" width="119" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title=" Calcula la Edad ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9T-k0-NiE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-N0-ol8">
+                                <rect key="frame" x="279" y="418" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WIN-vw-WWt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="1y4-6u-Glq"/>
+                            <constraint firstItem="MkV-Z2-DXn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bo-Wh-PAc"/>
+                            <constraint firstItem="QLg-kA-Hzi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="71p-nO-T9K"/>
+                            <constraint firstItem="u4e-N0-ol8" firstAttribute="top" secondItem="MkV-Z2-DXn" secondAttribute="bottom" constant="50" id="Biq-nZ-x0X"/>
+                            <constraint firstItem="QLg-kA-Hzi" firstAttribute="top" secondItem="WIN-vw-WWt" secondAttribute="bottom" constant="15" id="KqG-xS-ttR"/>
+                            <constraint firstItem="UCJ-tw-uvY" firstAttribute="top" secondItem="QLg-kA-Hzi" secondAttribute="bottom" constant="15" id="Or3-dP-eBG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u4e-N0-ol8" secondAttribute="trailing" constant="45" id="Tnb-jH-IgU"/>
+                            <constraint firstItem="u4e-N0-ol8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="cWz-XR-ckm"/>
+                            <constraint firstItem="MkV-Z2-DXn" firstAttribute="top" secondItem="UCJ-tw-uvY" secondAttribute="bottom" constant="50" id="dav-Ej-tue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WIN-vw-WWt" secondAttribute="trailing" constant="-20" id="m7b-NB-Rym"/>
+                            <constraint firstItem="UCJ-tw-uvY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mdU-wb-qLd"/>
+                            <constraint firstItem="WIN-vw-WWt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="u4J-N2-V2L"/>
+                            <constraint firstItem="UCJ-tw-uvY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="za6-Du-RBb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelResult" destination="u4e-N0-ol8" id="K0N-zr-hLf"/>
+                        <outlet property="textFileCatAge" destination="UCJ-tw-uvY" id="O14-zn-jZa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="135"/>
+        </scene>
+    </scenes>
+</document>
