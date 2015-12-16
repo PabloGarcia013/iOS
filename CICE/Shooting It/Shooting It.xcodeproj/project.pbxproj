@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096981331C21F9990012C280 /* tiroAlBlanco.html in Resources */ = {isa = PBXBuildFile; fileRef = 096981321C21F9990012C280 /* tiroAlBlanco.html */; };
 		09FBC5631C1F3F2700A116FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBC5621C1F3F2700A116FE /* AppDelegate.swift */; };
 		09FBC5681C1F3F2700A116FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FBC5661C1F3F2700A116FE /* Main.storyboard */; };
 		09FBC56A1C1F3F2700A116FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FBC5691C1F3F2700A116FE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		096981321C21F9990012C280 /* tiroAlBlanco.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tiroAlBlanco.html; sourceTree = "<group>"; };
 		09FBC55F1C1F3F2700A116FE /* Shooting It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shooting It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FBC5621C1F3F2700A116FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09FBC5671C1F3F2700A116FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096981311C21F9900012C280 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				096981321C21F9990012C280 /* tiroAlBlanco.html */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
 		09FBC5561C1F3F2700A116FE = {
 			isa = PBXGroup;
 			children = (
@@ -56,23 +66,16 @@
 		09FBC5611C1F3F2700A116FE /* Shooting It */ = {
 			isa = PBXGroup;
 			children = (
-				09FBC5761C1F546100A116FE /* Images */,
+				096981311C21F9900012C280 /* Web */,
 				09FBC5621C1F3F2700A116FE /* AppDelegate.swift */,
 				09FBC5661C1F3F2700A116FE /* Main.storyboard */,
 				09FBC5741C1F479100A116FE /* ViewController.swift */,
+				09FBC57D1C1F628D00A116FE /* SecondView.swift */,
 				09FBC5691C1F3F2700A116FE /* Assets.xcassets */,
 				09FBC56B1C1F3F2700A116FE /* LaunchScreen.storyboard */,
 				09FBC56E1C1F3F2700A116FE /* Info.plist */,
-				09FBC57D1C1F628D00A116FE /* SecondView.swift */,
 			);
 			path = "Shooting It";
-			sourceTree = "<group>";
-		};
-		09FBC5761C1F546100A116FE /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +138,7 @@
 			files = (
 				09FBC56D1C1F3F2700A116FE /* LaunchScreen.storyboard in Resources */,
 				09FBC56A1C1F3F2700A116FE /* Assets.xcassets in Resources */,
+				096981331C21F9990012C280 /* tiroAlBlanco.html in Resources */,
 				09FBC5681C1F3F2700A116FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +300,7 @@
 				09FBC5731C1F3F2700A116FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

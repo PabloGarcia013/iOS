@@ -58,8 +58,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        
         super.viewDidLoad()
         self.startNewGame()
+        
+        let thumbImageNormal = UIImage(named:"slider")
+        pointsSlider.setThumbImage(thumbImageNormal, forState: UIControlState.Normal)
+        
+        let thumbImageHighLight = UIImage(named:"sliderHighlight")
+        pointsSlider.setThumbImage(thumbImageHighLight, forState: UIControlState.Highlighted)
+        
+        let inset = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        if let trackLeftImage = UIImage(named: "trackSliderLeft"){
+            let trackLeftResizable = trackLeftImage.resizableImageWithCapInsets(inset)
+            pointsSlider.setMinimumTrackImage(trackLeftResizable, forState: UIControlState.Normal)
+        }
+        if let trackRightImage = UIImage(named: "trackSliderRight"){
+            let trackRightResizable = trackRightImage.resizableImageWithCapInsets(inset)
+            pointsSlider.setMaximumTrackImage(trackRightResizable, forState: UIControlState.Normal)
+            
+        }
+
         
     }
 
