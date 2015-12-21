@@ -29,15 +29,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ3-BD-LAJ">
-                                <rect key="frame" x="529" y="135.5" width="31" height="20.5"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eoX-Zh-Gsv">
-                                <rect key="frame" x="80" y="135.5" width="441" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" minimumValueImage="oneIcon" maximumValueImage="hundredIcon" translatesAutoresizingMaskIntoConstraints="NO" id="eoX-Zh-Gsv">
+                                <rect key="frame" x="43" y="135.5" width="514" height="31"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -144,46 +137,32 @@
                                     <constraint firstItem="iNt-2y-jSK" firstAttribute="leading" secondItem="DKw-4C-qUt" secondAttribute="trailing" constant="5" id="xv3-o8-9gI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBV-wV-1Qd">
-                                <rect key="frame" x="40" y="135.5" width="32" height="20.5"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tBV-wV-1Qd" firstAttribute="top" secondItem="lwb-CY-hIa" secondAttribute="bottom" constant="15" id="3oT-4b-2CW"/>
                             <constraint firstItem="lwb-CY-hIa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="50y-Xo-hBv"/>
-                            <constraint firstItem="IQ3-BD-LAJ" firstAttribute="top" secondItem="aUB-pS-k7r" secondAttribute="bottom" constant="35" id="Aiv-Me-A7s"/>
+                            <constraint firstItem="eoX-Zh-Gsv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Bqx-We-hOB"/>
                             <constraint firstItem="I0o-Tv-hZK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ESM-EU-9RV"/>
-                            <constraint firstItem="IQ3-BD-LAJ" firstAttribute="leading" secondItem="eoX-Zh-Gsv" secondAttribute="trailing" constant="10" id="Lf9-Sz-dC3"/>
-                            <constraint firstItem="tBV-wV-1Qd" firstAttribute="top" secondItem="aUB-pS-k7r" secondAttribute="bottom" constant="35" id="NYZ-xY-m8c"/>
                             <constraint firstAttribute="trailing" secondItem="lwb-CY-hIa" secondAttribute="trailing" id="PIM-8I-mod"/>
                             <constraint firstItem="lwb-CY-hIa" firstAttribute="top" secondItem="aUB-pS-k7r" secondAttribute="bottom" constant="20" id="Sxz-Cf-uqD"/>
                             <constraint firstAttribute="trailing" secondItem="I0o-Tv-hZK" secondAttribute="trailing" id="XTo-2u-61i"/>
-                            <constraint firstItem="IQ3-BD-LAJ" firstAttribute="top" secondItem="lwb-CY-hIa" secondAttribute="bottom" constant="15" id="Xon-OF-nr6"/>
                             <constraint firstItem="lwb-CY-hIa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6w-iJ-J9e"/>
                             <constraint firstItem="eoX-Zh-Gsv" firstAttribute="top" secondItem="lwb-CY-hIa" secondAttribute="bottom" constant="15" id="fWI-ll-cEG"/>
-                            <constraint firstItem="eoX-Zh-Gsv" firstAttribute="leading" secondItem="tBV-wV-1Qd" secondAttribute="trailing" constant="10" id="gZ5-AM-QSl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eoX-Zh-Gsv" secondAttribute="trailing" constant="25" id="fjv-Jj-9HF"/>
                             <constraint firstItem="aUB-pS-k7r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="jNJ-BX-zSz"/>
                             <constraint firstItem="eoX-Zh-Gsv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kyM-ye-9wL"/>
                             <constraint firstItem="aUB-pS-k7r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lvg-31-Jk7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IQ3-BD-LAJ" secondAttribute="trailing" constant="20" id="pJW-2k-Gad"/>
                             <constraint firstItem="m2S-ka-Dga" firstAttribute="top" secondItem="eoX-Zh-Gsv" secondAttribute="bottom" constant="25" id="qhG-yN-sPq"/>
                             <constraint firstItem="eoX-Zh-Gsv" firstAttribute="top" secondItem="aUB-pS-k7r" secondAttribute="bottom" constant="30" id="s75-bl-FsZ"/>
                             <constraint firstItem="m2S-ka-Dga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="taQ-cD-a3F"/>
-                            <constraint firstItem="tBV-wV-1Qd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="tqo-1W-3lT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I0o-Tv-hZK" secondAttribute="bottom" id="wQf-sV-Q5c"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="b6w-iJ-J9e"/>
-                                <exclude reference="NYZ-xY-m8c"/>
+                                <exclude reference="kyM-ye-9wL"/>
                                 <exclude reference="s75-bl-FsZ"/>
-                                <exclude reference="Aiv-Me-A7s"/>
                             </mask>
                         </variation>
                     </view>
@@ -276,8 +255,10 @@
         <image name="background" width="480" height="470"/>
         <image name="beforeButton" width="48" height="48"/>
         <image name="checkButton" width="48" height="48"/>
+        <image name="hundredIcon" width="24" height="24"/>
         <image name="infoButton" width="48" height="48"/>
         <image name="mailButton" width="48" height="48"/>
         <image name="newGame" width="48" height="48"/>
+        <image name="oneIcon" width="24" height="24"/>
     </resources>
 </document>
