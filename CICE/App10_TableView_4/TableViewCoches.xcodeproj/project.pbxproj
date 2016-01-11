@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0980FCEC1C4449C400B77E26 /* ford_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCE71C4449C400B77E26 /* ford_focus.png */; };
+		0980FCED1C4449C400B77E26 /* fiat_500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCE81C4449C400B77E26 /* fiat_500.png */; };
+		0980FCEE1C4449C400B77E26 /* golf_gti.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCE91C4449C400B77E26 /* golf_gti.png */; };
+		0980FCEF1C4449C400B77E26 /* hammer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCEA1C4449C400B77E26 /* hammer.png */; };
+		0980FCF01C4449C400B77E26 /* ford_mustang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCEB1C4449C400B77E26 /* ford_mustang.jpg */; };
+		0980FCF51C444B3100B77E26 /* alfa.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCF11C444B3100B77E26 /* alfa.png */; };
+		0980FCF61C444B3100B77E26 /* toyota.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCF21C444B3100B77E26 /* toyota.png */; };
+		0980FCF71C444B3100B77E26 /* bmw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCF31C444B3100B77E26 /* bmw.jpg */; };
+		0980FCF81C444B3100B77E26 /* mercedes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCF41C444B3100B77E26 /* mercedes.png */; };
+		0980FCFB1C444BC100B77E26 /* smart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCF91C444BC100B77E26 /* smart.png */; };
+		0980FCFC1C444BC100B77E26 /* mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980FCFA1C444BC100B77E26 /* mini.png */; };
 		09D0B86A1C4443CD00C2B736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0B8691C4443CD00C2B736 /* AppDelegate.swift */; };
 		09D0B86F1C4443CD00C2B736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D0B86D1C4443CD00C2B736 /* Main.storyboard */; };
 		09D0B8711C4443CD00C2B736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D0B8701C4443CD00C2B736 /* Assets.xcassets */; };
@@ -16,6 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0980FCE71C4449C400B77E26 /* ford_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ford_focus.png; sourceTree = "<group>"; };
+		0980FCE81C4449C400B77E26 /* fiat_500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiat_500.png; sourceTree = "<group>"; };
+		0980FCE91C4449C400B77E26 /* golf_gti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golf_gti.png; sourceTree = "<group>"; };
+		0980FCEA1C4449C400B77E26 /* hammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hammer.png; sourceTree = "<group>"; };
+		0980FCEB1C4449C400B77E26 /* ford_mustang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ford_mustang.jpg; sourceTree = "<group>"; };
+		0980FCF11C444B3100B77E26 /* alfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alfa.png; sourceTree = "<group>"; };
+		0980FCF21C444B3100B77E26 /* toyota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toyota.png; sourceTree = "<group>"; };
+		0980FCF31C444B3100B77E26 /* bmw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bmw.jpg; sourceTree = "<group>"; };
+		0980FCF41C444B3100B77E26 /* mercedes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercedes.png; sourceTree = "<group>"; };
+		0980FCF91C444BC100B77E26 /* smart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smart.png; sourceTree = "<group>"; };
+		0980FCFA1C444BC100B77E26 /* mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mini.png; sourceTree = "<group>"; };
 		09D0B8661C4443CD00C2B736 /* TableViewCoches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCoches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D0B8691C4443CD00C2B736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D0B86E1C4443CD00C2B736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0980FCE61C4449B800B77E26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0980FCF91C444BC100B77E26 /* smart.png */,
+				0980FCFA1C444BC100B77E26 /* mini.png */,
+				0980FCF11C444B3100B77E26 /* alfa.png */,
+				0980FCF21C444B3100B77E26 /* toyota.png */,
+				0980FCF31C444B3100B77E26 /* bmw.jpg */,
+				0980FCF41C444B3100B77E26 /* mercedes.png */,
+				0980FCE71C4449C400B77E26 /* ford_focus.png */,
+				0980FCE81C4449C400B77E26 /* fiat_500.png */,
+				0980FCE91C4449C400B77E26 /* golf_gti.png */,
+				0980FCEA1C4449C400B77E26 /* hammer.png */,
+				0980FCEB1C4449C400B77E26 /* ford_mustang.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		09D0B85D1C4443CD00C2B736 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +96,7 @@
 		09D0B8681C4443CD00C2B736 /* TableViewCoches */ = {
 			isa = PBXGroup;
 			children = (
+				0980FCE61C4449B800B77E26 /* Images */,
 				09D0B8691C4443CD00C2B736 /* AppDelegate.swift */,
 				09D0B86D1C4443CD00C2B736 /* Main.storyboard */,
 				09D0B8701C4443CD00C2B736 /* Assets.xcassets */,
@@ -125,9 +166,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0980FCF01C4449C400B77E26 /* ford_mustang.jpg in Resources */,
+				0980FCEF1C4449C400B77E26 /* hammer.png in Resources */,
+				0980FCF51C444B3100B77E26 /* alfa.png in Resources */,
 				09D0B8741C4443CD00C2B736 /* LaunchScreen.storyboard in Resources */,
 				09D0B8711C4443CD00C2B736 /* Assets.xcassets in Resources */,
+				0980FCF71C444B3100B77E26 /* bmw.jpg in Resources */,
+				0980FCFC1C444BC100B77E26 /* mini.png in Resources */,
+				0980FCEE1C4449C400B77E26 /* golf_gti.png in Resources */,
+				0980FCFB1C444BC100B77E26 /* smart.png in Resources */,
+				0980FCF81C444B3100B77E26 /* mercedes.png in Resources */,
 				09D0B86F1C4443CD00C2B736 /* Main.storyboard in Resources */,
+				0980FCEC1C4449C400B77E26 /* ford_focus.png in Resources */,
+				0980FCED1C4449C400B77E26 /* fiat_500.png in Resources */,
+				0980FCF61C444B3100B77E26 /* toyota.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +342,7 @@
 				09D0B87A1C4443CD00C2B736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

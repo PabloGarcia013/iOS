@@ -13,6 +13,7 @@ class TableViewControllerCoches: UITableViewController {
     //MARK:- MODELO
     
     var coches : [ModelCoches] = []
+    var imageCoches = ["ford_focus.png","golf_gti.png","mercedes.png","bmw.jpg","alfa.png","toyota.png","mini.png","smart.png","","","fiat_500.png","","hammer.png","","","","ford_mustang.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,19 +48,20 @@ class TableViewControllerCoches: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         cell.textLabel?.text = coches[indexPath.row].name
         cell.detailTextLabel?.text = coches[indexPath.row].color
+        cell.imageView?.image = UIImage(named: imageCoches[indexPath.row]);
 
         return cell
     }
     
     func poblarCoches(){
-        let coche1 : ModelCoches = ModelCoches(name: "Ford Focus",color: "Verde")
+        let coche1 : ModelCoches = ModelCoches(name: "Ford Focus",color: "Blanco")
         let coche2 : ModelCoches = ModelCoches(name: "Golf",color: "Rojo")
-        let coche3 : ModelCoches = ModelCoches(name: "Mercedes",color: "Azul")
+        let coche3 : ModelCoches = ModelCoches(name: "Mercedes",color: "Blanco")
         let coche4 : ModelCoches = ModelCoches(name: "BMW",color: "Amarillo")
-        let coche5 : ModelCoches = ModelCoches(name: "Alfa Romeo",color: "Morado")
-        let coche6 : ModelCoches = ModelCoches(name: "Toyota Corolla",color: "Negro")
-        let coche7 : ModelCoches = ModelCoches(name: "Mini",color: "Gris")
-        let coche8 : ModelCoches = ModelCoches(name: "Smart",color: "Naranja")
+        let coche5 : ModelCoches = ModelCoches(name: "Alfa Romeo",color: "Rojo")
+        let coche6 : ModelCoches = ModelCoches(name: "Toyota Corolla",color: "Azul")
+        let coche7 : ModelCoches = ModelCoches(name: "Mini",color: "Amarillo")
+        let coche8 : ModelCoches = ModelCoches(name: "Smart",color: "Verde")
         let coche9 : ModelCoches = ModelCoches(name: "Porche",color: "Amarillo")
         let coche10 : ModelCoches = ModelCoches(name: "Nissan",color: "Granate")
         let coche11 : ModelCoches = ModelCoches(name: "Fiat 500",color: "Cyan")
