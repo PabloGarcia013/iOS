@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>firstName</key>
+		<string>Taylor</string>
+		<key>lastName</key>
+		<string>Swift</string>
+		<key>imageName</key>
+		<string>taylor_swift.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Michael</string>
+		<key>lastName</key>
+		<string>Jackson</string>
+		<key>imageName</key>
+		<string>michael_jackson.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Freddie</string>
+		<key>lastName</key>
+		<string>Mercury</string>
+		<key>imageName</key>
+		<string>freddie_mercury.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Will</string>
+		<key>lastName</key>
+		<string>Smith</string>
+		<key>imageName</key>
+		<string>will_smith.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Mario</string>
+		<key>lastName</key>
+		<string>Bros</string>
+		<key>imageName</key>
+		<string>mario_bros.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Miley</string>
+		<key>lastName</key>
+		<string>Cyrus</string>
+		<key>imageName</key>
+		<string>miley_cyrus.png</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Steve</string>
+		<key>lastName</key>
+		<string>Jobs</string>
+		<key>imageName</key>
+		<string>steve_jobs.png</string>
+	</dict>
+</array>
+</plist>
