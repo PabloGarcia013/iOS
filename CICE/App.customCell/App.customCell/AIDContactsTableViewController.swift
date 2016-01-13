@@ -67,6 +67,24 @@ class AIDContactsTableViewController: UITableViewController {
 
         return customCell
     }
+    
+    //MARK: - UITableView Delegate
+        override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+        
+            let myDetailViewController : DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
+            
+            contact_dictionary = self.contact_array.objectAtIndex(indexPath.row) as! NSDictionary
+            
+            myDetailViewController.detailNameText = contact_dictionary["firstName"] as! String
+            myDetailViewController.detailLastNameText = contact_dictionary["lastName"] as! String
+            myDetailViewController.detailImage = contact_dictionary["imageName"] as! String
+            
+            navigationController?.pushViewController(myDetailViewController, animated: true)
+            
+        }
+    }
+
 
 
     /*
@@ -114,4 +132,4 @@ class AIDContactsTableViewController: UITableViewController {
     }
     */
 
-}
+

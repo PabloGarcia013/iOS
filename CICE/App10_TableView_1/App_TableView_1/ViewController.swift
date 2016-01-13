@@ -57,7 +57,17 @@ class ViewController: UIViewController {
     //MARK: - UITableView Delegate
     extension ViewController: UITableViewDelegate{
         func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            
+            
+            
+            let myDetailViewController : AIDViewController = self.storyboard?.instantiateViewControllerWithIdentifier("detalle") as! AIDViewController
+            myDetailViewController.dataName = miArray[indexPath.row]
+            
+            navigationController?.pushViewController(myDetailViewController, animated: true)
+            
+            
             print(miArray[indexPath.row])
+            
         }
     }
 

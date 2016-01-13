@@ -21,6 +21,7 @@
 		09724FE81C46D5F7000C361A /* steve_jobs.png in Resources */ = {isa = PBXBuildFile; fileRef = 09724FE21C46D5F7000C361A /* steve_jobs.png */; };
 		09724FE91C46D5F7000C361A /* miley_cyrus.png in Resources */ = {isa = PBXBuildFile; fileRef = 09724FE31C46D5F7000C361A /* miley_cyrus.png */; };
 		09724FEB1C46D86A000C361A /* TAIDableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09724FEA1C46D86A000C361A /* TAIDableViewCell.swift */; };
+		09724FEF1C46EBF0000C361A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09724FEE1C46EBF0000C361A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		09724FE21C46D5F7000C361A /* steve_jobs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steve_jobs.png; sourceTree = "<group>"; };
 		09724FE31C46D5F7000C361A /* miley_cyrus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miley_cyrus.png; sourceTree = "<group>"; };
 		09724FEA1C46D86A000C361A /* TAIDableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAIDableViewCell.swift; sourceTree = "<group>"; };
+		09724FEE1C46EBF0000C361A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				09724FEA1C46D86A000C361A /* TAIDableViewCell.swift */,
 				09724FD91C46D169000C361A /* Contactos.plist */,
 				09724FCB1C46CD97000C361A /* LaunchScreen.storyboard */,
+				09724FEE1C46EBF0000C361A /* DetailViewController.swift */,
 			);
 			path = App.customCell;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				09724FC31C46CD97000C361A /* AppDelegate.swift in Sources */,
 				09724FEB1C46D86A000C361A /* TAIDableViewCell.swift in Sources */,
 				09724FD81C46D105000C361A /* AIDContactsTableViewController.swift in Sources */,
+				09724FEF1C46EBF0000C361A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,7 @@
 				09724FD31C46CD97000C361A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
