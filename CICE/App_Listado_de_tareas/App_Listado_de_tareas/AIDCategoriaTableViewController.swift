@@ -8,6 +8,12 @@
 
 import UIKit
 
+var listadoTareas = [String]()
+var listadoDescripcion = [String]()
+var listadoPrioridad = [String]()
+
+var listadoFotos = [NSData]()
+
 class AIDCategoriaTableViewController: UITableViewController {
 
     override func viewDidLoad() {

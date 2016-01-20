@@ -15,10 +15,16 @@ class AIDCustomCell: UITableViewCell {
     @IBOutlet weak var labelTarea: UILabel!
     @IBOutlet weak var labelPrioridad: UILabel!
     @IBOutlet weak var textViewDescripcion: UITextView!
+    @IBOutlet weak var cellImage: UIImageView!
+    
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        cellImage.layer.cornerRadius = cellImage.frame.size.width / 2
+        cellImage.clipsToBounds = true
+        
+        
         // Initialization code
     }
 
@@ -27,5 +33,6 @@ class AIDCustomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }

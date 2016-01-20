@@ -10,11 +10,6 @@ import UIKit
 
 // MARK: - VARIABLES EXTERNAS
 
-var listadoTareas = [String]()
-var listadoDescripcion = [String]()
-var listadoPrioridad = [String]()
-
-
 class AIDListadoTareasTableViewController: UITableViewController {
 
     
@@ -32,10 +27,6 @@ class AIDListadoTareasTableViewController: UITableViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        
-        listadoTareas = NSUserDefaults.standardUserDefaults().objectForKey("listadoTareas") as! [String]
-        listadoDescripcion = NSUserDefaults.standardUserDefaults().objectForKey("listadoDescripcion") as! [String]
-        listadoPrioridad = NSUserDefaults.standardUserDefaults().objectForKey("listadoPrioridad") as! [String]
         
         if listadoTareas.count <= 0{
             let alert = UIAlertController(title: "No tienes tareas!", message: "No tienes ninguna tarea, vete a dormir!", preferredStyle: UIAlertControllerStyle.Alert)
@@ -67,11 +58,13 @@ class AIDListadoTareasTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let customCell : AIDCustomCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! AIDCustomCell
-
-        customCell.labelTarea.text = listadoTareas[indexPath.row]
-        customCell.labelPrioridad.text = listadoPrioridad[indexPath.row]
-        customCell.textViewDescripcion.text = listadoDescripcion[indexPath.row]
-        
+        if listadoTareas.count > 0{
+            customCell.labelTarea.text = listadoTareas[indexPath.row]
+            customCell.labelPrioridad.text = listadoPrioridad[indexPath.row]
+            customCell.textViewDescripcion.text = listadoDescripcion[indexPath.row]
+            let image : UIImage = UIImage(data: listadoFotos[indexPath.row])!
+            customCell.cellImage.image = image
+        }
         return customCell
     }
 
@@ -83,17 +76,23 @@ class AIDListadoTareasTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            listadoTareas.removeAtIndex(indexPath.row)
+            listadoPrioridad.removeAtIndex(indexPath.row)
+            listadoDescripcion.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(listadoTareas[indexPath.row])
+        print(listadoDescripcion[indexPath.row])
+        print(listadoPrioridad[indexPath.row])
+    }
 
     /*
     // Override to support rearranging the table view.
