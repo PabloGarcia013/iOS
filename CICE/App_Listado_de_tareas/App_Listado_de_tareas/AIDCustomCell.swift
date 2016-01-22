@@ -17,8 +17,6 @@ class AIDCustomCell: UITableViewCell {
     @IBOutlet weak var textViewDescripcion: UITextView!
     @IBOutlet weak var cellImage: UIImageView!
     
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         cellImage.layer.cornerRadius = cellImage.frame.size.width / 2

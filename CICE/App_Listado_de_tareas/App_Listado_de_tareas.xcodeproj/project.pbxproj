@@ -12,6 +12,8 @@
 		0974AF391C4D6A3900699EB4 /* AIDListadoTareasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974AF381C4D6A3900699EB4 /* AIDListadoTareasTableViewController.swift */; };
 		0974AF3B1C4D6A6300699EB4 /* AIDDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974AF3A1C4D6A6300699EB4 /* AIDDetalleViewController.swift */; };
 		0974AF3D1C4D7A0B00699EB4 /* AIDCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974AF3C1C4D7A0B00699EB4 /* AIDCustomCell.swift */; };
+		09C7A9101C52B42500FCC690 /* NotificacionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C7A90F1C52B42500FCC690 /* NotificacionManager.swift */; };
+		09C7A91F1C52BDDD00FCC690 /* nav_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C7A91E1C52BDDD00FCC690 /* nav_bar@2x.png */; };
 		09CDB4171C4D63F7008EBCAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CDB4161C4D63F7008EBCAA /* AppDelegate.swift */; };
 		09CDB4191C4D63F7008EBCAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CDB4181C4D63F7008EBCAA /* ViewController.swift */; };
 		09CDB41C1C4D63F7008EBCAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CDB41A1C4D63F7008EBCAA /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		0974AF381C4D6A3900699EB4 /* AIDListadoTareasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIDListadoTareasTableViewController.swift; sourceTree = "<group>"; };
 		0974AF3A1C4D6A6300699EB4 /* AIDDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIDDetalleViewController.swift; sourceTree = "<group>"; };
 		0974AF3C1C4D7A0B00699EB4 /* AIDCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIDCustomCell.swift; sourceTree = "<group>"; };
+		09C7A90F1C52B42500FCC690 /* NotificacionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionManager.swift; sourceTree = "<group>"; };
+		09C7A91E1C52BDDD00FCC690 /* nav_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar@2x.png"; sourceTree = "<group>"; };
 		09CDB4131C4D63F7008EBCAA /* App_Listado_de_tareas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_Listado_de_tareas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CDB4161C4D63F7008EBCAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09CDB4181C4D63F7008EBCAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C7A9111C52B8E400FCC690 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				09C7A91E1C52BDDD00FCC690 /* nav_bar@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		09CDB40A1C4D63F7008EBCAA = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 		09CDB4151C4D63F7008EBCAA /* App_Listado_de_tareas */ = {
 			isa = PBXGroup;
 			children = (
+				09C7A9111C52B8E400FCC690 /* Images */,
 				09CDB4161C4D63F7008EBCAA /* AppDelegate.swift */,
 				09CDB4181C4D63F7008EBCAA /* ViewController.swift */,
 				09CDB41A1C4D63F7008EBCAA /* Main.storyboard */,
@@ -75,6 +88,7 @@
 				0974AF381C4D6A3900699EB4 /* AIDListadoTareasTableViewController.swift */,
 				0974AF3A1C4D6A6300699EB4 /* AIDDetalleViewController.swift */,
 				0974AF3C1C4D7A0B00699EB4 /* AIDCustomCell.swift */,
+				09C7A90F1C52B42500FCC690 /* NotificacionManager.swift */,
 			);
 			path = App_Listado_de_tareas;
 			sourceTree = "<group>";
@@ -137,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C7A91F1C52BDDD00FCC690 /* nav_bar@2x.png in Resources */,
 				09CDB4211C4D63F7008EBCAA /* LaunchScreen.storyboard in Resources */,
 				09CDB41E1C4D63F7008EBCAA /* Assets.xcassets in Resources */,
 				09CDB41C1C4D63F7008EBCAA /* Main.storyboard in Resources */,
@@ -155,6 +170,7 @@
 				09CDB4191C4D63F7008EBCAA /* ViewController.swift in Sources */,
 				0974AF3D1C4D7A0B00699EB4 /* AIDCustomCell.swift in Sources */,
 				09CDB4171C4D63F7008EBCAA /* AppDelegate.swift in Sources */,
+				09C7A9101C52B42500FCC690 /* NotificacionManager.swift in Sources */,
 				0974AF391C4D6A3900699EB4 /* AIDListadoTareasTableViewController.swift in Sources */,
 				0974AF351C4D69B100699EB4 /* AIDTareasViewController.swift in Sources */,
 			);

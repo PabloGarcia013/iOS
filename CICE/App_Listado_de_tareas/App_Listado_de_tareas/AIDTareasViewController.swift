@@ -45,6 +45,9 @@ class AIDTareasViewController: UIViewController, UITextFieldDelegate, UITextView
             presentViewController(alertController, animated: true, completion: nil)
         }
         
+        // Enviar notificacion tarea.
+        let notification : NotificacionManager = NotificacionManager()
+        notification.sendNotification("Nueva", time: 10)
         
         
     }

@@ -18,7 +18,7 @@ class AIDListadoTareasTableViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,6 +36,7 @@ class AIDListadoTareasTableViewController: UITableViewController {
         }else{
             myTableView.reloadData()
         }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,6 +94,8 @@ class AIDListadoTareasTableViewController: UITableViewController {
         print(listadoDescripcion[indexPath.row])
         print(listadoPrioridad[indexPath.row])
     }
+    
+    
 
     /*
     // Override to support rearranging the table view.

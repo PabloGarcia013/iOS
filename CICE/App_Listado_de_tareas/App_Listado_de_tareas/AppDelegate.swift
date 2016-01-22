@@ -17,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Override point for customization after application launch.
+       customizerNavigationBar()
+        
+        if(UIApplication.instancesRespondToSelector("registerUserNotificationSettings:")){
+            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge,.Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        }
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -46,6 +54,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    
+    //MARK: - NOTIFICACION LOCAL
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
 
+    }
+    
+    func customizerNavigationBar(){
+        let shadow = NSShadow()
+        shadow.shadowColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.8)
+        shadow.shadowOffset = CGSizeMake(0.0, 1.0)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSShadowAttributeName: shadow]
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "nav_bar@2x.png"), forBarMetrics: .Default)
+    }
 }
 
