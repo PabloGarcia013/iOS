@@ -10,6 +10,7 @@ import UIKit
 
 class AIDTareasViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate{
     
+    
     // MARK: - IBOULET
     
     @IBOutlet weak var textFieldTarea: UITextField!
@@ -27,7 +28,7 @@ class AIDTareasViewController: UIViewController, UITextFieldDelegate, UITextView
     
     @IBAction func salvarInformacionTableView(sender: AnyObject) {
         
-        if textFieldTarea.text == nil || textViewDescripcion.text == nil || myImage.image == nil || textViewDescripcion.text == nil{
+        if textFieldTarea.text == "" || textViewDescripcion.text == "" || myImage.image == nil || textViewDescripcion.text == ""{
             let alertController = UIAlertController(title: "ERROR!", message: "No has introducido alguno de los campos, por farvor rellenalo", preferredStyle: UIAlertControllerStyle.Alert)
             let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(alertAction)
@@ -54,7 +55,7 @@ class AIDTareasViewController: UIViewController, UITextFieldDelegate, UITextView
     
     // MARK: - VARIABLES LOCALES
     
-    var nombreCategoria = "Sin categoria"
+    var nombreCategoria = "Sin Categoría"
     var pickerData = ["Muy Alta", "Alta", "Media", "Baja", "Muy Baja"]
     
     
@@ -93,21 +94,23 @@ class AIDTareasViewController: UIViewController, UITextFieldDelegate, UITextView
         self.view.endEditing(true)
     }
     
-    
-    
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        if segue.identifier == "SeleccionaUnaCategoria"{
+            let categoriaVC = segue.destinationViewController as! AIDCategoriaTableViewController
+            categoriaVC.nombreCategoriaSelecionada = nombreCategoria
+        }
     }
-    */
+    
+    
+    @IBAction func AIDSeleccionadoNuevaCategoria(segue: UIStoryboardSegue){
+        let controller = segue.sourceViewController as!AIDCategoriaTableViewController
+        nombreCategoria = controller.nombreCategoriaSelecionada
+        labelCategoria.text = nombreCategoria
+    }
 
 }
-
 
 // MARK: - DELEGATE PICKER VIEW
 extension AIDTareasViewController : UIPickerViewDataSource, UIPickerViewDelegate{
