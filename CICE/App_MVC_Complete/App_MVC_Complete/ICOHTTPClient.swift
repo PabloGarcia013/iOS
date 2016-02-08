@@ -20,15 +20,11 @@ class ICOHTTPClient {
     }
     
     func downloadImage(url: String) -> UIImage{
-        
-
+    
         let aUrl = NSURL(string: url)
         let data = NSData(contentsOfURL: aUrl!)
         let image = UIImage(data: data!)
         return image!
+        
     }
-    
-    
-    
-    
 }

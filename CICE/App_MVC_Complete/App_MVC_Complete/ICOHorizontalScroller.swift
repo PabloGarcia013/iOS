@@ -138,8 +138,13 @@ class ICOHorizontalScroller: UIView {
     
     //agregamosm la siguiente funcion, para acceder a la caratula del Album de nuestro carrusel de imagenes, que estan piuestas en el scrollView o desplazador, este simeplemente no devuelve la vista a un indice determinado
     func vistaDelIndiceDelObjeto(indice: Int) -> UIView{
+        if indice < miArrayDeVistas.count{
+            return miArrayDeVistas[indice]
+        }else{
+            let lastElement = miArrayDeVistas.count - 1
+            return miArrayDeVistas[lastElement]
+        }
         
-        return miArrayDeVistas[indice]
         
     }
     

@@ -49,7 +49,27 @@ class ICOLibraryAPI: NSObject {
     
     func descargaDeImagenes(notification:NSNotification){
         
-        // 1 -> eesta funcion
+        // 1 -> esta funcion
+        
+        let userInfo = notification.userInfo as! [String: AnyObject]
+        let imageView = userInfo["imageView"] as! UIImageView?
+        let urlCaratula = userInfo["urlCaratula"] as! String
+        
+        if let imageViewDesempaquetada = imageView{
+            imageViewDesempaquetada.image = persistanceManager.getImagenSalvadaLocalmente(urlCaratula.lastPathComponent)
+            
+            if imageViewDesempaquetada.image == nil{
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+                    let imagenDescargada = self.httpClient.downloadImage(urlCaratula as String)
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        imageViewDesempaquetada.image = imagenDescargada
+                        self.persistanceManager.salvarLocalmenteImagenes(imagenDescargada, fileName: urlCaratula.lastPathComponent)
+                    })
+                    
+                })
+            }
+        }
         
         
         
@@ -101,28 +121,13 @@ class ICOLibraryAPI: NSObject {
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
+}
 
+extension String{
+    var lastPathComponent : String{
+        get{
+            return (self as NSString).lastPathComponent
+        }
+    }
 }

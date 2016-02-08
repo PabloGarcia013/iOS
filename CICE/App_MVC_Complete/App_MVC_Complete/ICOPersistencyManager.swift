@@ -77,6 +77,38 @@ class ICOPersistencyManager: NSObject {
     }
     
     
+    // Guardado de imagenes localmente en el fichero documents.
+    
+    func salvarLocalmenteImagenes(imagen: UIImage, fileName: String){
+        
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(fileName)")
+        
+        let data = UIImageJPEGRepresentation(imagen, 0.5)
+        
+        data!.writeToFile(path, atomically: true)
+        
+    }
+    
+    func getImagenSalvadaLocalmente(fileName : String) -> UIImage?{
+        
+
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(fileName)")
+        //let data : NSData = NSData(contentsOfURL: <#T##NSURL#>, options: <#T##NSDataReadingOptions#>)
+        
+        let data : NSData?
+        do{
+            data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.UncachedRead)
+            return UIImage(data: data!)
+        }catch let errorTemporal as NSError{
+            print(errorTemporal)
+            return nil
+            
+        }
+        
+        
+    }
+    
+    
     
     
     
