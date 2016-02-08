@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  App_MVC_Complete
 //
-//  Created by Pablo Garcia on 27/1/16.
-//  Copyright © 2016 Pablo Garcia. All rights reserved.
+//  Created by CICE on 27/1/16.
+//  Copyright © 2016 CICE. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
         return true
     }
 

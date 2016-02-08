@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15E5AED91C594550009FE126"
+               BlueprintIdentifier = "09575D6F1C59454500B3A193"
                BuildableName = "App_MVC_Complete.app"
                BlueprintName = "App_MVC_Complete"
                ReferencedContainer = "container:App_MVC_Complete.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15E5AED91C594550009FE126"
+            BlueprintIdentifier = "09575D6F1C59454500B3A193"
             BuildableName = "App_MVC_Complete.app"
             BlueprintName = "App_MVC_Complete"
             ReferencedContainer = "container:App_MVC_Complete.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15E5AED91C594550009FE126"
+            BlueprintIdentifier = "09575D6F1C59454500B3A193"
             BuildableName = "App_MVC_Complete.app"
             BlueprintName = "App_MVC_Complete"
             ReferencedContainer = "container:App_MVC_Complete.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15E5AED91C594550009FE126"
+            BlueprintIdentifier = "09575D6F1C59454500B3A193"
             BuildableName = "App_MVC_Complete.app"
             BlueprintName = "App_MVC_Complete"
             ReferencedContainer = "container:App_MVC_Complete.xcodeproj">
