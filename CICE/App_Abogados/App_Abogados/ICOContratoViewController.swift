@@ -41,11 +41,11 @@ class ICOContratoViewController: UIViewController {
         newData.setValue(textFieldEmpresa.text, forKey: "nombreEmpresa")
         newData.setValue(textFieldDireccion.text, forKey: "direccionEmpresa")
         newData.setValue(textFieldDespacho.text, forKey: "despachoAbogados")
-        newData.setValue(textFieldCuenta.text, forKey: "colegiado1")
-        newData.setValue(textFieldTitular.text, forKey: "colegiado2")
-        newData.setValue(textFieldColegiado1.text, forKey: "observacionesGenerales")
-        newData.setValue(textFieldColegiado2.text, forKey: "cuentaBancaria")
-        newData.setValue(textViewObservaciones.text, forKey: "titularCuenta")
+        newData.setValue(textFieldCuenta.text, forKey: "cuentaBancaria")
+        newData.setValue(textFieldTitular.text, forKey: "titularCuenta")
+        newData.setValue(textFieldColegiado1.text, forKey: "colegiado1")
+        newData.setValue(textFieldColegiado2.text, forKey: "colegiado2")
+        newData.setValue(textViewObservaciones.text, forKey: "observacionesGenerales")
         
         //Guardamos la info
         
@@ -54,7 +54,6 @@ class ICOContratoViewController: UIViewController {
         }catch let error{
             print(error)
         }
-        print(newData)
         
     }
     

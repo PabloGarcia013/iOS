@@ -10,6 +10,8 @@
 		092EA0DC1C7B9FF200CD2FFC /* ICOContratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EA0DB1C7B9FF200CD2FFC /* ICOContratoViewController.swift */; };
 		092EA0DF1C7BA22D00CD2FFC /* Contrato+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EA0DD1C7BA22D00CD2FFC /* Contrato+CoreDataProperties.swift */; };
 		092EA0E01C7BA22D00CD2FFC /* Contrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EA0DE1C7BA22D00CD2FFC /* Contrato.swift */; };
+		09342BAC1C7E3035001E0439 /* ICOClientesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09342BAB1C7E3035001E0439 /* ICOClientesTableViewController.swift */; };
+		09342BAE1C7E3A7A001E0439 /* ICODetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09342BAD1C7E3A7A001E0439 /* ICODetailViewController.swift */; };
 		0957F18F1C7791AD00A73EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957F18E1C7791AD00A73EBD /* AppDelegate.swift */; };
 		0957F1941C7791AD00A73EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0957F1921C7791AD00A73EBD /* Main.storyboard */; };
 		0957F1971C7791AD00A73EBD /* App_Abogados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0957F1951C7791AD00A73EBD /* App_Abogados.xcdatamodeld */; };
@@ -60,6 +62,8 @@
 		092EA0DB1C7B9FF200CD2FFC /* ICOContratoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOContratoViewController.swift; sourceTree = "<group>"; };
 		092EA0DD1C7BA22D00CD2FFC /* Contrato+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contrato+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		092EA0DE1C7BA22D00CD2FFC /* Contrato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contrato.swift; sourceTree = "<group>"; };
+		09342BAB1C7E3035001E0439 /* ICOClientesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOClientesTableViewController.swift; sourceTree = "<group>"; };
+		09342BAD1C7E3A7A001E0439 /* ICODetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetailViewController.swift; sourceTree = "<group>"; };
 		0957F18B1C7791AD00A73EBD /* App_Abogados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_Abogados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957F18E1C7791AD00A73EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0957F1931C7791AD00A73EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				0957F1E81C779D8B00A73EBD /* ICOCEViewController.swift */,
 				0957F1EA1C779D9B00A73EBD /* ICOSolViewController.swift */,
 				092EA0DB1C7B9FF200CD2FFC /* ICOContratoViewController.swift */,
+				09342BAB1C7E3035001E0439 /* ICOClientesTableViewController.swift */,
+				09342BAD1C7E3A7A001E0439 /* ICODetailViewController.swift */,
 				0957F1921C7791AD00A73EBD /* Main.storyboard */,
 				0957F1981C7791AD00A73EBD /* Assets.xcassets */,
 				0957F19A1C7791AD00A73EBD /* LaunchScreen.storyboard */,
@@ -310,6 +316,8 @@
 				092EA0DF1C7BA22D00CD2FFC /* Contrato+CoreDataProperties.swift in Sources */,
 				092EA0E01C7BA22D00CD2FFC /* Contrato.swift in Sources */,
 				0957F1971C7791AD00A73EBD /* App_Abogados.xcdatamodeld in Sources */,
+				09342BAE1C7E3A7A001E0439 /* ICODetailViewController.swift in Sources */,
+				09342BAC1C7E3035001E0439 /* ICOClientesTableViewController.swift in Sources */,
 				0957F1E51C779D6200A73EBD /* ICOFirstViewController.swift in Sources */,
 				0957F18F1C7791AD00A73EBD /* AppDelegate.swift in Sources */,
 				0957F1E71C779D7A00A73EBD /* ICOSJViewController.swift in Sources */,
