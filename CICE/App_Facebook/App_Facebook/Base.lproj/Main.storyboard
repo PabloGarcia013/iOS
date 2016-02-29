@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-ne-upy">
+                                <rect key="frame" x="20" y="162" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="PostInFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87v-7M-c0x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRK-8E-Cym">
+                                <rect key="frame" x="20" y="234" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="PostInTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JtP-NO-in6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jRK-8E-Cym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ho-3f-I0S"/>
+                            <constraint firstItem="jRK-8E-Cym" firstAttribute="top" secondItem="GHR-ne-upy" secondAttribute="bottom" constant="42" id="MbZ-vu-tp5"/>
+                            <constraint firstItem="GHR-ne-upy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="rft-iL-8nQ"/>
+                            <constraint firstItem="GHR-ne-upy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAt-dj-blc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFacebook" destination="GHR-ne-upy" id="JKf-FM-5lO"/>
+                        <outlet property="buttonTwitter" destination="jRK-8E-Cym" id="15n-8A-Gn8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="629"/>
+        </scene>
+    </scenes>
+</document>
