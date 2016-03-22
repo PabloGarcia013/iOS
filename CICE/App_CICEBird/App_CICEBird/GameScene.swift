@@ -30,6 +30,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // Mark: - Timers
     var timer = NSTimer()
     var timerRotateBird = NSTimer()
+    var timerCoin = NSTimer()
     
     // Mark: - Flags
     var gameOver = false
@@ -40,6 +41,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let objectsGroup : UInt32 = 2
     let gapGroup : UInt32 = 4
     let coinGroup : UInt32 = 5
+    
     
     
     //MARK: - Setup your scene here
@@ -56,6 +58,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func initGame(){
         score = 0
         gameOver = false;
+        
         self.addChild(movingGroup)
         
         makeBottomLimit()
@@ -64,14 +67,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         makeBird()
         makeLoopRotateBird()
         makeLoopPie1AndPipe2()
+        makeLoopCoin()
         makeLabel()
+        
 
         movingGroup.speed = 1
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
         
-        if contact.bodyA.categoryBitMask == gapGroup || contact.bodyB.categoryBitMask == gapGroup{
+        if contact.bodyA.categoryBitMask == coinGroup || contact.bodyB.categoryBitMask == coinGroup{
+            
+        
+        }else if contact.bodyA.categoryBitMask == gapGroup || contact.bodyB.categoryBitMask == gapGroup{
             
             score++
             scoreLabel.text = "\(score)"
@@ -85,6 +93,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             timer.invalidate()
             timerRotateBird.invalidate()
+            timerCoin.invalidate()
             
             makeLableGameOverFinal()
         }
@@ -101,8 +110,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bird.physicsBody?.applyImpulse(CGVectorMake(3, 0))
         bird.physicsBody?.allowsRotation = false
     }
-    
-    
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -111,6 +118,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             bird.physicsBody?.velocity = CGVectorMake(0, 0)
             bird.physicsBody?.applyImpulse(CGVectorMake(0, 32))
             bird.zRotation = 1
+            
         }else{
             
             resetGame()
@@ -226,7 +234,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let birdTexture1 = SKTexture(imageNamed: "flappy1.png")
         let birdTexture2 = SKTexture(imageNamed: "flappy2.png")
      
-        let animationBird = SKAction.animateWithTextures([birdTexture1, birdTexture2], timePerFrame: 0.3)
+        let animationBird = SKAction.animateWithTextures([birdTexture1, birdTexture2], timePerFrame: 0.1)
         
         let makeBirdForever = SKAction.repeatActionForever(animationBird)
         
@@ -241,15 +249,47 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         bird.physicsBody?.categoryBitMask = birdGroup
         bird.physicsBody?.collisionBitMask = objectsGroup
-        bird.physicsBody?.contactTestBitMask = objectsGroup | gapGroup
+        bird.physicsBody?.contactTestBitMask = objectsGroup | gapGroup | coinGroup
 
         self.addChild(bird)
         
     }
     
+    func makeCoin(){
+        
+        let coinTexture1 = SKTexture(imageNamed: "coin1.png")
+        let coinTexture2 = SKTexture(imageNamed: "coin2.png")
+        let coinTexture3 = SKTexture(imageNamed: "coin3.png")
+        let coinTexture4 = SKTexture(imageNamed: "coin4.png")
+        
+        let animationCoin = SKAction.animateWithTextures([coinTexture1, coinTexture2, coinTexture3, coinTexture4], timePerFrame: 0.1)
+        
+        let makeAnimationCoin = SKAction.repeatActionForever(animationCoin)
+        
+        coin = SKSpriteNode(texture: coinTexture1)
+        
+        let moveCoin = SKAction.moveByX(-self.frame.size.width, y: 0, duration: NSTimeInterval(8))
+        let removeCoin = SKAction.removeFromParent()
+        
+        let moveAndRemoveCoins = SKAction.sequence([moveCoin, removeCoin])
+        
+        coin.runAction(moveAndRemoveCoins)
+        coin.runAction(makeAnimationCoin)
+        coin.position = CGPointMake(self.frame.size.width, CGRectGetMidY(self.frame))
+        coin.zPosition = 7
+        
+        coin.physicsBody = SKPhysicsBody(rectangleOfSize: coin.size)
+        coin.physicsBody?.dynamic = false
+        coin.physicsBody?.categoryBitMask = gapGroup | coinGroup
+        
+        self.movingGroup.addChild(coin)
+        
+        
+    }
+    
     func makeLabel(){
         
-        scoreLabel.fontName = "Helvetica"
+        scoreLabel.fontName = "Helvetica-Bold"
         scoreLabel.fontSize = 80
         scoreLabel.text = "0"
         scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), self.frame.height-70)
@@ -278,16 +318,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    func resetGame(){
-        
-        movingGroup.removeAllChildren()
-        gameOverLabel.removeFromParent()
-        self.removeAllChildren()
-        
-        initGame()
-        
-    }
-    
     func makeLoopRotateBird(){
         timerRotateBird = NSTimer.scheduledTimerWithTimeInterval(0.05,
             target: self,
@@ -295,13 +325,31 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             userInfo: nil,
             repeats: true)
     }
+    
+    func makeLoopCoin(){
+        timerCoin = NSTimer.scheduledTimerWithTimeInterval(1,
+            target: self,
+            selector: "makeCoin",
+            userInfo: nil,
+            repeats: true)
+    }
+    
+    func resetGame(){
+        
+        movingGroup.removeAllChildren()
+        gameOverLabel.removeFromParent()
+        
+        self.removeAllChildren()
+        
+        initGame()
+        
+    }
+    
+    
     func rotateBird(){
         bird.zRotation = bird.zRotation - 0.1;
     }
     
-    func makeCoin(){
-        
-
-    }
+    
     
 }
