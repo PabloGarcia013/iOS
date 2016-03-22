@@ -77,7 +77,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
         
         if contact.bodyA.categoryBitMask == coinGroup || contact.bodyB.categoryBitMask == coinGroup{
-            
+            score += 5
+            scoreLabel.text = "\(score)"
         
         }else if contact.bodyA.categoryBitMask == gapGroup || contact.bodyB.categoryBitMask == gapGroup{
             
@@ -261,8 +262,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let coinTexture2 = SKTexture(imageNamed: "coin2.png")
         let coinTexture3 = SKTexture(imageNamed: "coin3.png")
         let coinTexture4 = SKTexture(imageNamed: "coin4.png")
+        let coinTexture5 = SKTexture(imageNamed: "coin5.png")
+        let coinTexture6 = SKTexture(imageNamed: "coin6.png")
+        let coinTexture7 = SKTexture(imageNamed: "coin7.png")
+        let coinTexture8 = SKTexture(imageNamed: "coin8.png")
+        let coinTexture9 = SKTexture(imageNamed: "coin9.png")
+        let coinTexture10 = SKTexture(imageNamed: "coin10.png")
+
         
-        let animationCoin = SKAction.animateWithTextures([coinTexture1, coinTexture2, coinTexture3, coinTexture4], timePerFrame: 0.1)
+        let animationCoin = SKAction.animateWithTextures([coinTexture1, coinTexture2, coinTexture3, coinTexture4, coinTexture5, coinTexture6, coinTexture7, coinTexture8 ,coinTexture9, coinTexture10], timePerFrame: 0.1)
         
         let makeAnimationCoin = SKAction.repeatActionForever(animationCoin)
         
@@ -283,7 +291,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         coin.physicsBody?.categoryBitMask = gapGroup | coinGroup
         
         self.movingGroup.addChild(coin)
-        
         
     }
     
@@ -327,7 +334,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func makeLoopCoin(){
-        timerCoin = NSTimer.scheduledTimerWithTimeInterval(1,
+        timerCoin = NSTimer.scheduledTimerWithTimeInterval(7,
             target: self,
             selector: "makeCoin",
             userInfo: nil,
